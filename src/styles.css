@@ -1,0 +1,165 @@
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  min-width: 600px;
+  box-shadow: 1px 1px 4px black, -1px -1px 4px black;
+}
+
+#background {
+  margin: 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("https://cdn5.vectorstock.com/i/1000x1000/29/14/paws-background-paw-blue-pattern-vector-21602914.jpg")
+    no-repeat center center fixed;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div#webpage-window-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 550%;
+  min-width: 700px;
+  min-height: 100%;
+  background-color: rgb(210, 224, 241);
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*/ .App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.AppHeader {
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  display: inline-block;
+  height: 3rem;
+  width: 65%;
+  margin-right: 5%;
+  margin: 0 1rem;
+}
+
+form button {
+  width: 20%;
+  padding: 1rem 0;
+  margin: 0px 5px 0px 5px;
+}
+
+#formLayout {
+  max-width: 700px;
+  min-width: 600px;
+  padding: 10px;
+  border: blue 2px solid;
+}
+
+#formInput,
+#formButtons {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#catImg {
+  display: flex;
+  list-style: none;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+
+  margin: auto;
+}
+
+ul {
+  margin: auto;
+  border: blue 4px solid;
+  box-shadow: 1px 1px 2px blue, -1px -1px 2px blue;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin-bottom: 5px;
+}
+
+#kittyPaws {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: auto;
+  max-width: 400px;
+}
+
+button.on {
+  background-color: green;
+}
+
+button.off {
+  background-color: red;
+}
+
+@media (max-width: 500px) {
+  div#webpage-window-container {
+    max-width: 550%;
+    min-width: 400px;
+  }
+
+  #formLayout {
+    max-width: 200px;
+    flex-wrap: wrap;
+    min-width: 100px;
+    padding: 10px;
+    border: blue 2px solid;
+  }
+
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: 1px 1px 2px black, -1px -1px 2px black;
+
+    margin: auto;
+  }
+
+  #formInput,
+  #formButtons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
